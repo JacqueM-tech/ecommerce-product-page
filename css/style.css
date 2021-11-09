@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --orange: hsl(26, 100%, 55%);
+    --pale-orange: hsl(25, 100%, 94%);
+    --very-dark-blue: hsl(220, 13%, 13%);
+    --dark-grayish-blue: hsl(219, 9%, 45%);
+    --grayish-blue: hsl(220, 14%, 75%);
+    --light-grayish-blue: hsl(223, 64%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%, 75%);  
+    --color: hsl(228%, 45%, 44%, 50%);
+}
+body {
+    font-size: 11px; 
+    text-align: center;
+    
+}
+/* Navigation Styles Start */
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--white);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+nav {
+    position: absolute;
+    text-align: left;
+    top: 75%;
+    width: 100%;
+    display: none;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+}
+nav a {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.nav-toggle:checked ~ nav {
+    display: block;
+}
+.nav-toggle {
+    display: none;
+}

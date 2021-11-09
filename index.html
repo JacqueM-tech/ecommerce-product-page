@@ -5,25 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js"></script>  
   <title>Frontend Mentor | E-commerce product page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <header>
-    <nav>
-    Collections
-    <li>Men</li>
-    <li>Women</li>
-    <li>About</li>
-    <li>Contact</li>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span><img src="images/icon-menu.svg" alt="picture of menu icon"></span>  
+    </label>
+    <nav class="navbar">
+      <div class="close-icon">
+        <img src="images/icon-close.svg" alt="close icon">
+      </div>
+      <ul>         
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </li>
+      </ul>
     </nav>
-    <img src="images/icon-menu.svg" alt="picture of menu icon">
+    
     <h1>sneakers</h1>
     <img src="images/icon-cart.svg" alt="picture of a shopping cart">
     <img src="images/image-avatar.png" alt="avatar">
